@@ -1,18 +1,20 @@
-
 <html>
 
 <head>
 <title>test navigator.share</title>
   </head>
 <body>
-
+<div class="btn_share">Share</div>
 <script>
-if(navigator.share) {
-  navigator.share({title:"fff", url:'https://www.baidu.com',test:'share'})
-} else {
-  alert("not support navigator.share!");
-}
+    document.getElementsByClassName('btn_share')[0].addEventListener('click',() => {
+        if(navigator.share) {
+            navigator.share({title:"fff", url:'https://www.baidu.com',test:'share'})
+        } else {
+            alert("not support navigator.share!");
+        }
+    })
 </script>
 
 </body>
 </html>
+
