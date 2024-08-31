@@ -1,0 +1,27 @@
+<!DOCTYPE HTML><html lang="en"><head>
+<meta charset="UTF-8">
+<title>Test herf</title>
+</head>
+<body>
+<p>
+<h3>Test herf</H3>
+<p></p>
+<div class="btn_herf">location.herf</div>
+<div class="btn_length">history.length</div>
+<script>
+
+// 或者在点击事件中使用
+function goToHerf() {
+  location.href = 'https://www.baidu.com';
+}
+
+function getHistoryLength() {
+  alert(history.length);
+}
+ 
+// 为一个按钮绑定点击事件
+document.getElementById('btn_herf').addEventListener('click', goToHerf);
+document.getElementById('btn_length').addEventListener('click', getHistoryLength);
+<script>
+</body>
+</html>
