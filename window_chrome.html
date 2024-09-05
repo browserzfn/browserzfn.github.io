@@ -1,0 +1,30 @@
+<!DOCTYPE HTML><html lang="en"><head>
+<meta charset="UTF-8">
+<title>Test herf</title>
+</head>
+<body>
+<p>
+<h3>Test herf</H3>
+<p></p>
+<div class="btn_herf">window.chrome</div>
+  <h3>Test herf</H3>
+  <h3>Test herf</H3>
+  <h3>Test herf</H3>
+  <h3>Test herf</H3>
+  <h3>Test herf</H3>
+  <h3>Test herf</H3>
+<script>
+
+function isSupportWindowChrome() {
+  if(window.chrome) {
+    alert("support window.chrome");
+  } else {
+    alert("not support window.chrome");
+  }
+}
+ 
+// 为一个按钮绑定点击事件
+document.getElementsByClassName('btn_herf')[0].addEventListener('click', isSupportWindowChrome);
+</script>
+</body>
+</html>
